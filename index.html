@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLARIUM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <span class="header__logo">SOLARIUM</span>
+        <nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#hero">TRENDS</a></li>
+            <li><a class="nav-link" href="#about">ARCHIVE</a></li>
+            <li><a class="nav-link" href="#gallery">DROPS</a></li>
+            <li><a class="nav-link" href="#form">COMMUNITY</a></li>
+          </ul>
+        </nav>
+        <button class="header__btn">JOIN THE CLUB</button>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero__container">
+          <div class="hero__article">
+            <span class="hero__tag">The Y2K Renaissance</span>
+            <h1 class="hero__title">Y2K Era & <span>Streetwear</span></h1>
+            <p class="hero__description">
+              Your Style — Your Rules. Curating the sun- drenched aesthetics of
+              the millennium for the modern concrete jungle.
+            </p>
+            <div class="hero__article-btn-wrapper">
+              <button class="hero__article-btn-primary">
+                explore Archive <img src="./img/Icon.png" alt="" />
+              </button>
+              <button
+                onclick="() => handleOpenModal()"
+                id="openmodalbtn"
+                class="hero__article-btn-secondary"
+              >
+                View Drops
+              </button>
+            </div>
+          </div>
+          <div class="hero__imgs-wrapper">
+            <img
+              src="./img/Streetwear photography.png"
+              alt=""
+              class="hero__img"
+            />
+            <img src="./img/Sneakers detail.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container about__container">
+          <div class="about__text__wrapper">
+            <h2 class="about__title">What is Y2K and why is it a hit again?</h2>
+            <p class="about__text">
+              Fashion is cyclical, and today Gen Z is setting the new rules. We
+              mix vintage vibes with modern aesthetics. The main rule of modern
+              streetwear is
+              <span class="about__outline">absolute freedom of</span>
+              <span class="about__outline2">self-expression.</span>
+            </p>
+            <p class="about__quote">
+              "Clothing is the easiest way to tell a story about yourself
+              without saying a single word."
+            </p>
+            <span class="about__span about__span1">Layering in everything</span>
+            <span class="about__span about__span2">Oversized fit</span>
+            <span class="about__span about__span3"
+              >Bright and acid color accents</span
+            >
+          </div>
+          <div class="img__wrapper">
+            <img src="./img/Overlay+Shadow-2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery">
+        <div class="container gallery__container">
+          <div class="gallery__text__wrapper">
+            <h2 class="gallery__title">Trend Gallery</h2>
+            <p class="gallery__p">
+              The essential artifacts of modern urban expression. Curated for
+              the bold.
+            </p>
+          </div>
+          <div class="gallery__link__wrapper">
+            <a class="gallery__link" href="#">View All Trends</a>
+            <img class="gallery__img0" src="./img/Icon-2.png" alt="" />
+          </div>
+
+          <ul class="gallery__imgs__wrapper">
+            <li class="gallery__img">
+              <img class="gallery__img1" src="./img/Cargo Pants.png" alt="" />
+              <div class="gallery__card__overlay gallery__verlay">
+                <span class="gallery__span">1 / Archive</span>
+                <div class="gallery__li__text__wrapper">
+                  <span class="gallery__span2">essential</span>
+                  <h3 class="gallery__h3">Cargo Pants</h3>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__img">
+              <img
+                class="gallery__img1"
+                src="./img/Chunky Sneakers.png"
+                alt=""
+              />
+              <div class="gallery__card__overlay gallery__verlay">
+                <span class="gallery__span">1/ Archive</span>
+                <div class="gallery__li__text__wrapper">
+                  <span class="gallery__span2">essential</span>
+                  <h3 class="gallery__h3">Chunky Sneakers</h3>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__img">
+              <img class="gallery__img1" src="./img/Hoodies.png" alt="" />
+              <div class="gallery__card__overlay gallery__verlay">
+                <span class="gallery__span">1/ Archive</span>
+                <div class="gallery__li__text__wrapper">
+                  <span class="gallery__span2">essential</span>
+                  <h3 class="gallery__h3">Hoodies</h3>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__img">
+              <img
+                class="gallery__img1"
+                src="./img/Tech Accessories.png"
+                alt=""
+              />
+              <div class="gallery__card__overlay gallery__verlay">
+                <span class="gallery__span">1/ Archive</span>
+                <div class="gallery__li__text__wrapper">
+                  <span class="gallery__span2">essential</span>
+                  <h3 class="gallery__h3">Tech Accessories</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="leaderstats" class="leaderstats">
+        <div class="leaderstats__container">
+          <div class="leaderstats__text__wrapper">
+            <h2 class="leaderstats__title">Evolution of Style</h2>
+            <p class="leaderstats__text">
+              How the urban landscape transformed from the analog 90s to the
+              digital future.
+            </p>
+          </div>
+
+          <table class="leaderstats__table">
+            <thead class="leaderstats__table__header">
+              <tr>
+                <th>Era</th>
+                <th>Key Silhouette</th>
+                <th>Vibe</th>
+                <th>Solarium Status</th>
+              </tr>
+            </thead>
+            <tbody class="leaderstats__table__body">
+              <tr>
+                <th>Late 90s</th>
+                <td>Wide-leg cargo & utility vests</td>
+                <td>Industrial minimalism</td>
+                <td>
+                  <span class="leaderstats__span leaderstats__bg"
+                    >Archived</span
+                  >
+                </td>
+              </tr>
+              <tr class="leaderstats__tr">
+                <th>Y2K Era</th>
+                <td>Metallic fabrics & chunky tech</td>
+                <td>Cyber-optimism</td>
+                <td>
+                  <span class="leaderstats__span leaderstats__bg1"
+                    >Trending Now</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th>Late 2010s</th>
+                <td>Slim technical joggers</td>
+                <td>Athleisure dominance</td>
+                <td>
+                  <span class="leaderstats__span leaderstats__bg">Vaulted</span>
+                </td>
+              </tr>
+              <tr>
+                <th>2024+</th>
+                <td>Extreme baggy & organic textures</td>
+                <td>Neo-solarium warmth</td>
+                <td>
+                  <span class="leaderstats__span leaderstats__bg2"
+                    >Emerging</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="form" class="form">
+        <div class="container form__container">
+          <div class="form__outer__wrapper">
+            <div class="form__inner__wrapper">
+              <div class="form__text__wrapper">
+                <h2 class="form__title">Join the Movement</h2>
+                <p class="form__text">
+                  Sign up to receive early access to archive drops, community
+                  lookbooks, and sun-drenched style guides.
+                </p>
+                <div class="bla">
+                  <ul class="form__member-list">
+                    <li class="form__member__br">
+                      <img src="./img/Member.png" alt="" class="form__member" />
+                    </li>
+                    <li class="form__member__br">
+                      <img
+                        src="./img/Member-2.png"
+                        alt=""
+                        class="form__member"
+                      />
+                    </li>
+                    <li class="form__member__br">
+                      <img
+                        src="./img/Member-3.png"
+                        alt=""
+                        class="form__member"
+                      />
+                    </li>
+                  </ul>
+                  <p class="form__num__members">+2,400 members</p>
+                </div>
+              </div>
+              <form class="form__form">
+                <div class="form__form__input">
+                  <label for="name">Full Name</label>
+                  <input type="text" placeholder="Alex Rivera" />
+                </div>
+                <div class="form__form__input">
+                  <label for="Email">Email Address</label>
+                  <input type="text" placeholder="Alex@solarium.com" />
+                </div>
+                <button class="form__form__submit" type="submit">
+                  Authenticate Profile
+                  <img class="form__img" src="./img/btn-img.png" />
+                </button>
+                <p class="form__form__warning">
+                  By joining you agree to our Curator terms and lifestyle
+                  guidelines
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <span class="footer__logo">SOLARIUM</span>
+        <nav>
+          <ul class="footer__nav-list">
+            <li>
+              <a href="https://instagram.com" class="footer__nav-link"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com" class="footer__nav-link">Twitter</a>
+            </li>
+            <li>
+              <a href="https://tiktok.com" class="footer__nav-link">TikTok</a>
+            </li>
+            <li>
+              <a href="https://discord.com" class="footer__nav-link">Discord</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__text">© 2024 SOLARIUM ARCHIVE. CURATED IN LIGHT.</p>
+      </div>
+    </footer>
+    <div id="modaloverlay" class="modal__overlay">
+      <div id="modal" class="modal">
+        <button class="modal__close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x-icon lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="modal__img__wrapper">
+          <img
+            class="modal__img"
+            src="./img/cda902dfff7b7614ad216aa0bfed2b634bc066ac.jpg"
+            alt=""
+            width="224px"
+            height="224px"
+          />
+          <span class="modal__img__span">Limited</span>
+        </div>
+        <span class="modal__title">Secret Drop!</span>
+        <p class="modal__p">
+          You've unlocked a sun-drenched exclusive reward for the new season
+        </p>
+        <div class="skidka__wrapper">
+          <div class="skidka__wrapper__wrapper">
+            <span class="modal__skidka">-15%</span>
+            <span class="modal__skidka__for">OFF YOUR NEXT ORDER</span>
+          </div>
+        </div>
+        <div class="modal__goiteens">
+          <span class="modal__goiteens__img"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+            >
+              <path
+                d="M10 13C10.2833 13 10.5208 12.9042 10.7125 12.7125C10.9042 12.5208 11 12.2833 11 12C11 11.7167 10.9042 11.4792 10.7125 11.2875C10.5208 11.0958 10.2833 11 10 11C9.71667 11 9.47917 11.0958 9.2875 11.2875C9.09583 11.4792 9 11.7167 9 12C9 12.2833 9.09583 12.5208 9.2875 12.7125C9.47917 12.9042 9.71667 13 10 13ZM10 9C10.2833 9 10.5208 8.90417 10.7125 8.7125C10.9042 8.52083 11 8.28333 11 8C11 7.71667 10.9042 7.47917 10.7125 7.2875C10.5208 7.09583 10.2833 7 10 7C9.71667 7 9.47917 7.09583 9.2875 7.2875C9.09583 7.47917 9 7.71667 9 8C9 8.28333 9.09583 8.52083 9.2875 8.7125C9.47917 8.90417 9.71667 9 10 9ZM10 5C10.2833 5 10.5208 4.90417 10.7125 4.7125C10.9042 4.52083 11 4.28333 11 4C11 3.71667 10.9042 3.47917 10.7125 3.2875C10.5208 3.09583 10.2833 3 10 3C9.71667 3 9.47917 3.09583 9.2875 3.2875C9.09583 3.47917 9 3.71667 9 4C9 4.28333 9.09583 4.52083 9.2875 4.7125C9.47917 4.90417 9.71667 5 10 5ZM18 16H2C1.45 16 0.979167 15.8042 0.5875 15.4125C0.195833 15.0208 0 14.55 0 14V10C0.55 10 1.02083 9.80417 1.4125 9.4125C1.80417 9.02083 2 8.55 2 8C2 7.45 1.80417 6.97917 1.4125 6.5875C1.02083 6.19583 0.55 6 0 6V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H18C18.55 0 19.0208 0.195833 19.4125 0.5875C19.8042 0.979167 20 1.45 20 2V6C19.45 6 18.9792 6.19583 18.5875 6.5875C18.1958 6.97917 18 7.45 18 8C18 8.55 18.1958 9.02083 18.5875 9.4125C18.9792 9.80417 19.45 10 20 10V14C20 14.55 19.8042 15.0208 19.4125 15.4125C19.0208 15.8042 18.55 16 18 16Z"
+                fill="#8D4A00"
+              />
+            </svg> </span
+          ><span class="modal__goiteens__text">GOITEENS_STYLE</span>
+        </div>
+        <button class="modal__btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-copy-icon lucide-copy"
+          >
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+          </svg>
+          Copy Code
+        </button>
+        <span class="modal__btn__text">Valid for the next 24 hours only</span>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
+  </body>
+</html>
